@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <h1>Course And Student Registeration<span class="badge badge-secondary"></span></h1>
+    <div style=" display: flex; flex-direction: row;  ">
+    
+    <div>
+        <img src="/Image/registeration.jpg">
+    </div> 
+
+    <div style="padding-left: 15px;">
+    <form action = "/web/courses/create/addcourse" method = "POST">
+
+        <div class="form-group">
+          <label for="InputCourseName">Course Name</label>
+          <input type="text" class="form-control" name="name" placeholder="course name" required>
+        </div>
+        <br/>
+
+        <div class="form-group">
+          <label for="InputCourseCode">Course Code</label>
+          <input type="text" class="form-control" name="code" placeholder="course code" required>
+        </div>
+        <br/>
+
+        <div class="form-group">
+            <label for="InputCourseDescription">Description</label>
+            <input type="text" class="form-control" name="description" placeholder="optional" >
+          </div>
+          <br/>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    
+    <div style="padding-top: 15px;">
+      <form action = "/web/students/create/addstudent" method = "POST">
+  
+          <div class="form-group">
+            <label for="InputStudentName">Student Name</label>
+            <input type="text" class="form-control" name="name" placeholder="student name" required>
+          </div>
+          <br/>
+  
+          <div class="form-group">
+            <label for="InputStudentCode">Student Code</label>
+            <input type="text" class="form-control" name="code" placeholder="student code" required>
+          </div>
+          <br/>
+          
+          <button type="submit" class="btn btn-success">Register</button>
+      </form>
+      </div>
+    <script src = "lms-app.js">
+    </script>
+</body>
+</html>
